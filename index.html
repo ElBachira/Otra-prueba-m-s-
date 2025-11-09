@@ -18,7 +18,25 @@
             <div class="scroll-container">
                 <div class="polaroid-section"><span class="photo-corner top-left"></span><span class="photo-corner top-right"></span><span class="photo-corner bottom-left"></span><span class="photo-corner bottom-right"></span><img src="stellan.png" alt="Imagen de Stellan"></div>
                 <div class="title-section"><div class="washi-tape">Bachira</div><h1>Eadgyth Merrimack</h1><p>"Hice un juramento con mi último aliento. Que mi alma no descansaría hasta que mi verdadero amor me reclamara. Durante ocho largos años, esa promesa fue mi única compañía en la oscuridad, mi única razón para no desvanecerme. Cuando pusiste este anillo en mi dedo, creí que eras la respuesta a mi plegaria, el final de mi espera. Pero el amor no debería nacer del miedo, ¿verdad? No debería sentirse como cadenas frías alrededor de tu corazón. Dime, querido, ¿puede un alma seguir rompiéndose, una y otra vez, incluso después de que el cuerpo se ha rendido? Te amo... o al menos, amo desesperadamente la idea de lo que representas: una segunda oportunidad. Pero ya he aprendido, a un costo muy alto, que un juramento no puede forzar a un corazón a amar. Te amo, {{user}}... y precisamente por eso, sé que no eres mío.."</p></div>
-                <div class="player-section"><audio id="song" src="song.mp3" loop></audio><img src="cancion_icon.png" class="spotify-icon"><div class="song-info"><p>Una lágrima Que Dar</p><span>Danny Elfman</span></div><button id="play-pause-btn" class="play-button"><i class="fas fa-play"></i></button></div>
+                
+                <div class="player-section">
+                    <audio id="song-player"></audio>
+                    <img src="cancion_icon.png" class="spotify-icon">
+                    <div class="song-info">
+                        <p id="song-title">Una lágrima Que Dar</p>
+                        <span id="song-artist">Danny Elfman</span>
+                    </div>
+                    <div class="player-controls">
+                        <button id="prev-btn" class="player-ctrl-btn"><i class="fas fa-backward"></i></button>
+                        <button id="play-pause-btn" class="play-button"><i class="fas fa-play"></i></button>
+                        <button id="next-btn" class="player-ctrl-btn"><i class="fas fa-forward"></i></button>
+                    </div>
+                </div>
+                <div class="lyrics-section">
+                    <div id="lyrics-container">
+                        <p class="lyric-line active">♪</p>
+                    </div>
+                </div>
                 <div class="paper-section">
                     <h2><i class="fas fa-leaf doodle-sway"></i> Ficha de Datos <i class="fas fa-star doodle-sparkle"></i></h2>
                     <img src="sticker.png" alt="FNaF Easter Egg" id="fnaf-sticker">
@@ -58,10 +76,11 @@ Ocho años después, mientras se convertía en un ecosistema para gusanos y raí
                 <a href="https://poe.com/Eadgyth_MerrimackS" class="link-sonnet"><i class="fas fa-moon"></i> Poe Sonnet</a>
                 <a href="https://chub.ai/characters/ElBachira/eadgyth-5cc8a1b85e91" class="link-chub"><i class="fas fa-cubes"></i> Chub</a>
                 <a href="https://es.cvdk.io/c/3Ghe0oYYTdq7h2s-940teA?rc=H697VWwWoG" class="link-caveduck"><i class="fas fa-dungeon"></i> Caveduck</a>
-                </div>
+            </div>
             <div class="close-btn" data-tab="links-tab"><i class="fas fa-times"></i></div>
         </div>
-        </div>
+
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
