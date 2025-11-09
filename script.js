@@ -1,18 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     // --- PARCHE PARA AUTOPLAY ---
-    // CORREGIDO: Apunta al nuevo ID 'song-player'
+    // ¡Eliminado! Ya no es necesario, el botón de play principal se encargará.
     const audio = document.getElementById('song-player'); 
-    function unlockAudio() {
-        if (audio.paused) {
-            audio.play().catch(() => {}); 
-            audio.pause();
-        }
-        document.body.removeEventListener('click', unlockAudio);
-        document.body.removeEventListener('touchstart', unlockAudio);
-    }
-    document.body.addEventListener('click', unlockAudio);
-    document.body.addEventListener('touchstart', unlockAudio);
 
     // --- PRE-LOADER ---
     const preloader = document.getElementById('preloader');
@@ -24,8 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const clickSound = new Audio('https://www.fesliyanstudios.com/play-mp3/387');
     const swooshSound = new Audio('https://www.fesliyanstudios.com/play-mp3/570');
     
-    // CORREGIDO: Añadidos los nuevos botones '.player-ctrl-btn'
-    document.querySelectorAll('.tab-button, .close-btn, .play-button, .links-grid a, .player-ctrl-btn').forEach(element => {
+    // CORRECCIÓN: Se eliminó '.play-button' del selector para evitar
+    // el conflicto de audio. Los botones prev/next (con .player-ctrl-btn) 
+    // SÍ mantendrán el sonido de clic.
+    document.querySelectorAll('.tab-button, .close-btn, .links-grid a, .player-ctrl-btn').forEach(element => {
         element.addEventListener('click', () => {
             if (element.matches('.links-grid a')) {
                 swooshSound.currentTime = 0;
@@ -176,7 +168,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Botón de Play/Pausa
     playPauseBtn.addEventListener('click', () => {
         if (audio.paused) {
-            audio.play();
+            // Esta es la parte importante. El primer play() debe ser
+            // directo de un clic del usuario.
+            audio.play().catch(e => console.error("Error al intentar reproducir:", e));
             playPauseBtn.innerHTML = pauseIcon;
             spotifyIcon.classList.add('is-spinning');
         } else {
@@ -193,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function() {
             currentSongIndex = songs.length - 1; // Vuelve al final
         }
         loadSong(currentSongIndex);
-        audio.play(); // Reproduce automáticamente la nueva canción
+        audio.play().catch(e => console.error("Error al intentar reproducir:", e)); // Reproduce automáticamente la nueva canción
         playPauseBtn.innerHTML = pauseIcon;
         spotifyIcon.classList.add('is-spinning');
     });
@@ -205,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
             currentSongIndex = 0; // Vuelve al inicio
         }
         loadSong(currentSongIndex);
-        audio.play(); // Reproduce automáticamente la nueva canción
+        audio.play().catch(e => console.error("Error al intentar reproducir:", e)); // Reproduce automáticamente la nueva canción
         playPauseBtn.innerHTML = pauseIcon;
         spotifyIcon.classList.add('is-spinning');
     });
