@@ -88,15 +88,6 @@ document.addEventListener('DOMContentLoaded', function() {
             src: "song.mp3",
             lyrics: [
                 // 'time' es el segundo exacto en que quieres que aparezca la línea
-                { "timeiras jugando con **mi subconsciente**" },
-    { "time": 163, "line": "Mejor simplemente **corretear por la guardería y acampar**" }
-            ]
-        },
-        {
-            title: "Tu Segunda Canción", // <-- CAMBIA ESTO
-            artist: "Nombre del Artista", // <-- CAMBIA ESTO
-            src: "song2.mp3",
-            lyrics: [
     { "time": 13, "line": "Vivo en mi propio mundo de fantasía" },
     { "time": 18, "line": "Niños gritando en sus cunas, groserías" },
     { "time": 23, "line": "Veo el mundo con ojos cubiertos de tinta y lejía" },
@@ -129,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
     { "time": 161, "line": "Desata cordones, sí" },
     { "time": 164, "line": "Solo tropezando en ensoñaciones" },
     { "time": 166, "line": "Tengo pequeñas coartadas sucias sonando en repetición" },
-    { "time": 169, "line": "Mejor me pudro en la guardería y cuento ovejas" },
+    { "time": 169, "line": "Mejor me pudro en la guardería y cuento ovejas" }
                 // ... Sigue añadiendo líneas ...
             ]
         }
