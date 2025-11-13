@@ -88,39 +88,24 @@ document.addEventListener('DOMContentLoaded', function() {
             src: "song.mp3",
             lyrics: [
                 // 'time' es el segundo exacto en que quieres que aparezca la línea
-    { "time": 13, "line": "Vivo en mi propio mundo de fantasía" },
-    { "time": 18, "line": "Niños gritando en sus cunas, groserías" },
-    { "time": 23, "line": "Veo el mundo con ojos cubiertos de tinta y lejía" },
-    { "time": 28, "line": "Tacho a los que oyeron mis llantos y me vieron llorar" },
-    { "time": 33, "line": "Amo todo" },
-    { "time": 35, "line": "Fuego esparciéndose por mi habitación" },
-    { "time": 38, "line": "Mi mundo es tan brillante" },
-    { "time": 39, "line": "Cuesta respirar, pero está bien" },
-    { "time": 41, "line": "Shh" },
-    { "time": 64, "line": "Pego mis ojos abiertos para forzar la realidad" },
-    { "time": 67, "line": "Oh no" },
-    { "time": 69, "line": "¿Por qué no me dejas comer mi peso en alegría?" },
-    { "time": 74, "line": "Vivo en mi propio mundo de fantasía" },
-    { "time": 80, "line": "Niños gritando en sus cunas, groserías" },
-    { "time": 85, "line": "Algunos días me siento más flaco que todos los demás" },
-    { "time": 90, "line": "Y algunos días no sé si mi cuerpo me pertenece" },
-    { "time": 95, "line": "Amo todo" },
-    { "time": 97, "line": "Fuego esparciéndose por mi habitación" },
-    { "time": 100, "line": "Mi mundo es tan brillante" },
-    { "time": 101, "line": "Cuesta respirar, pero está bien" },
-    { "time": 103, "line": "Shh" },
-    { "time": 126, "line": "Quiero probar tu contenido, aguanta el aliento y siente la tensión" },
-    { "time": 131, "line": "Demonios se esconden tras la redención, la honestidad es un boleto de ida al infierno" },
-    { "time": 136, "line": "Quiero probar el consumo, devora más rápido para gastar el cansancio" },
-    { "time": 141, "line": "Oye a los niños cantar fuerte, \"Es música hasta que el látigo arda\"" },
-    { "time": 151, "line": "Solo quiero ser despreocupado, últimamente, sí" },
-    { "time": 154, "line": "Solo pateando margaritas" },
-    { "time": 156, "line": "Tengo demasiadas monedas en mis bolsillos" },
-    { "time": 159, "line": "Llámalas cubiertas fólicas en mi relicario" },
-    { "time": 161, "line": "Desata cordones, sí" },
-    { "time": 164, "line": "Solo tropezando en ensoñaciones" },
-    { "time": 166, "line": "Tengo pequeñas coartadas sucias sonando en repetición" },
-    { "time": 169, "line": "Mejor me pudro en la guardería y cuento ovejas" }
+                { time: 5, line: "No me queda ya que dar" },
+                { time: 10, line: "Solo una lágrima" },
+                { time: 15, line: "Que te ofrezco y ya..." },
+                { time: 20, line: "Si la aceptas tuya será" },
+                { time: 25, line: "Y así siempre me recordarás" },
+                // ... Sigue añadiendo líneas ...
+            ]
+        },
+        {
+            title: "Tu Segunda Canción", // <-- CAMBIA ESTO
+            artist: "Nombre del Artista", // <-- CAMBIA ESTO
+            src: "song2.mp3",
+            lyrics: [
+                { time: 3, line: "Esta es la letra" },
+                { time: 6, line: "de la segunda canción" },
+                { time: 10, line: "Añade tantas líneas" },
+                { time: 14, line: "como necesites." },
+                { time: 18, line: "El tiempo es en segundos." },
                 // ... Sigue añadiendo líneas ...
             ]
         }
