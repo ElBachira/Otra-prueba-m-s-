@@ -88,11 +88,21 @@ document.addEventListener('DOMContentLoaded', function() {
             src: "song.mp3",
             lyrics: [
                 // 'time' es el segundo exacto en que quieres que aparezca la línea
-                { time: 5, line: "No me queda ya que dar" },
-                { time: 10, line: "Solo una lágrima" },
-                { time: 15, line: "Que te ofrezco y ya..." },
-                { time: 20, line: "Si la aceptas tuya será" },
-                { time: 25, line: "Y así siempre me recordarás" },
+                { time: 9, line: "Vivo en mi propio mundo de fantasía" },
+{ time: 13, line: "Niños gritando en sus cunas, groserías" },
+{ time: 17, line: "Veo el mundo tras pantallas tintadas, cubiertas de hielo" },
+{ time: 21, line: "Malditos los que temen mis llantos y me ven llorar" },
+{ time: 25, line: "Amo todo" },
+{ time: 29, line: "Fuego esparciéndose por mi habitación" },
+{ time: 33, line: "Mi mundo es tan brillante" },
+{ time: 35, line: "Cuesta respirar, pero está bien (shh)" },
+{ time: 49, line: "Pega mis ojos abiertos para forzar la realidad" },
+{ time: 53, line: "¿Por qué no me dejas comer mi peso en alegría?" },
+{ time: 57, line: "Vivo en mi propio mundo de fantasía" },
+{ time: 61, line: "Niños gritando en sus cunas, groserías" },
+{ time: 65, line: "Unos días me siento más delgado que todos los demás" },
+{ time: 69, line: "Y otros días no sé si mi cuerpo me pertenece" },
+{ time: 73, line: "Amo todo" },
                 // ... Sigue añadiendo líneas ...
             ]
         },
