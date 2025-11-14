@@ -135,6 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
             artist: "Twenty One Pilots", // <-- CAMBIA ESTO
             src: "song2.mp3",
             lyrics: [
+                // 'time' es el segundo exacto en que quieres que aparezca la línea
                 { time: 6, line: "Todos mis amigos son desalmados, ten calma" }
 { time: 11, line: "Espera a que pregunten de quién vienes" }
 { time: 16, line: "Por favor, no hagas movimientos bruscos" }
