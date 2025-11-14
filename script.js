@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // =================================================================
     const songs = [
         {
-            title: "Una lágrima Que Dar",
-            artist: "Danny Elfman",
+            title: "Cradles",
+            artist: "Sub Urban",
             src: "song.mp3",
             lyrics: [
                 // 'time' es el segundo exacto en que quieres que aparezca la línea
@@ -131,15 +131,51 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
         {
-            title: "Tu Segunda Canción", // <-- CAMBIA ESTO
-            artist: "Nombre del Artista", // <-- CAMBIA ESTO
+            title: "Heathens", // <-- CAMBIA ESTO
+            artist: "Twenty One Pilots", // <-- CAMBIA ESTO
             src: "song2.mp3",
             lyrics: [
-                { time: 3, line: "Esta es la letra" },
-                { time: 6, line: "de la segunda canción" },
-                { time: 10, line: "Añade tantas líneas" },
-                { time: 14, line: "como necesites." },
-                { time: 18, line: "El tiempo es en segundos." },
+                { time: 6, line: "Todos mis amigos son desalmados, ten calma" }
+{ time: 11, line: "Espera a que pregunten de quién vienes" }
+{ time: 16, line: "Por favor, no hagas movimientos bruscos" }
+{ time: 21, line: "No sabes ni la mitad del horror" }
+{ time: 27, line: "Todos mis amigos son desalmados, ten calma" }
+{ time: 32, line: "Espera a que pregunten de quién vienes" }
+{ time: 37, line: "Por favor, no hagas movimientos bruscos" }
+{ time: 43, line: "No sabes ni la mitad del horror" }
+{ time: 49, line: "Bienvenido al cuarto de gente... que tiene cuartos llenos de gente" }
+{ time: 50, line: "Que un día amaron y ahora están guardados" }
+{ time: 55, line: "Solo porque dejamos las armas en la puerta" }
+{ time: 56, line: "No significa que la mente deje de ser explosiva" }
+{ time: 60, line: "Nunca sabrás si hay un psicópata sentado a tu lado" }
+{ time: 63, line: "Nunca sabrás si hay un asesino sentado a tu lado" }
+{ time: 66, line: "Pensarás: '¿Cómo llegué aquí, sentado a tu lado?'" }
+{ time: 69, line: "Pero después de todo, por favor no lo olvides" }
+{ time: 73, line: "Todos mis amigos son desalmados, ten calma" }
+{ time: 78, line: "Espera a que pregunten de quién vienes" }
+{ time: 84, line: "Por favor, no hagas movimientos bruscos" }
+{ time: 89, line: "No sabes ni la mitad del horror" }
+{ time: 95, line: "No tratamos muy bien a los extraños" }
+{ time: 97, line: "Dicen que los nuevos tienen un olor peculiar" }
+{ time: 100, line: "Desconfías, por no decir algo más" }
+{ time: 103, line: "Dicen que pueden oler tus intenciones" }
+{ time: 105, line: "Nunca sabrás si hay un fenómeno sentado a tu lado" }
+{ time: 108, line: "Tendrás gente muy rara sentada a tu lado" }
+{ time: 111, line: "Pensarás: '¿Cómo llegué aquí, sentado a tu lado?'" }
+{ time: 114, line: "Pero después de todo, por favor no lo olvides (cuidado)" }
+{ time: 123, line: "(Cuidado)" }
+{ time: 129, line: "Todos mis amigos son desalmados, ten calma" }
+{ time: 134, line: "Espera a que pregunten de quién vienes" }
+{ time: 139, line: "Por favor, no hagas movimientos bruscos" }
+{ time: 145, line: "No sabes ni la mitad del horror" }
+{ time: 150, line: "Todos mis amigos son desalmados, ten calma (cuidado)" }
+{ time: 156, line: "Espera a que pregunten de quién vienes (cuidado)" }
+{ time: 160, line: "Por favor, mis amigos son desalmados, ten calma (cuidado)" }
+{ time: 166, line: "Espera a que pregunten de quién vienes" }
+{ time: 171, line: "¿Por qué viniste? Sabías que debías quedarte" }
+{ time: 177, line: "Traté de advertirte que te alejaras" }
+{ time: 182, line: "Y ahora están afuera, listos para entrar" }
+{ time: 188, line: "Parece que podrías ser... uno de nosotros" }
                 // ... Sigue añadiendo líneas ...
             ]
         }
