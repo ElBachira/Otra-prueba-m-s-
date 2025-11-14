@@ -1,22 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     // --- PARCHE PARA AUTOPLAY ---
-    // ¡Eliminado! Ya no es necesario, el botón de play principal se encargará.
     const audio = document.getElementById('song-player'); 
 
     // --- PRE-LOADER ---
     const preloader = document.getElementById('preloader');
-    window.addEventListener('load', () => {
-        preloader.classList.add('loaded');
-    });
+    
+    // <-- CAMBIO 1: ELIMINA ESTAS 3 LÍNEAS -->
+    // window.addEventListener('load', () => {
+    //     preloader.classList.add('loaded');
+    // });
+    // <-- FIN DEL CAMBIO 1 -->
 
     // --- EFECTOS DE SONIDO ---
     const clickSound = new Audio('https://www.fesliyanstudios.com/play-mp3/387');
     const swooshSound = new Audio('https://www.fesliyanstudios.com/play-mp3/570');
     
-    // CORRECCIÓN: Se eliminó '.play-button' del selector para evitar
-    // el conflicto de audio. Los botones prev/next (con .player-ctrl-btn) 
-    // SÍ mantendrán el sonido de clic.
     document.querySelectorAll('.tab-button, .close-btn, .links-grid a, .player-ctrl-btn').forEach(element => {
         element.addEventListener('click', () => {
             if (element.matches('.links-grid a')) {
@@ -89,44 +88,44 @@ document.addEventListener('DOMContentLoaded', function() {
             lyrics: [
                 // 'time' es el segundo exacto en que quieres que aparezca la línea
                 { time: 14, line: "Vivo en mi propio mundo de fantasía" },
-{ time: 20, line: "Niños gritando groserías desde sus cunas" },
-{ time: 26, line: "Veo el mundo con ojos cubiertos de tinta y cloro" },
-{ time: 32, line: "Tacho a quienes oyeron mis gritos y me vieron llorar" },
-{ time: 38, line: "Amo todo esto" },
-{ time: 41, line: "El fuego se expande por mi habitación" },
-{ time: 45, line: "Mi mundo es tan brillante" },
-{ time: 46, line: "Cuesta respirar, pero está bien" },
-{ time: 48, line: "Shh" },
-{ time: 61, line: "Shh" },
-{ time: 74, line: "Pego mis párpados para forzar la realidad (oh, no no)" },
-{ time: 80, line: "¿Por qué no me dejas atiborrarme de felicidad?" },
-{ time: 86, line: "Vivo en mi propio mundo de fantasía" },
-{ time: 92, line: "Niños gritando groserías desde sus cunas" },
-{ time: 98, line: "Hay días que me siento más flaco que nunca" },
-{ time: 104, line: "A veces no sé si este cuerpo me pertenece" },
-{ time: 110, line: "Amo todo esto" },
-{ time: 113, line: "El fuego se expande por mi habitación" },
-{ time: 117, line: "Mi mundo es tan brillante" },
-{ time: 118, line: "Cuesta respirar, pero está bien" },
-{ time: 120, line: "Shh" },
-{ time: 133, line: "Shh" },
-{ time: 146, line: "Quiero probar tu satisfacción" },
-{ time: 149, line: "Aguanta el aliento y siente la tensión" },
-{ time: 152, line: "Los demonios se esconden tras la redención" },
-{ time: 154, line: "La honestidad es un boleto solo de ida al infierno" },
-{ time: 158, line: "Quiero saborear el consumo" },
-{ time: 160, line: "Respira rápido y gasta el oxígeno" },
-{ time: 163, line: "Escucha a los niños cantar fuerte" },
-{ time: 166, line: "Es música hasta que la mecha se consuma" },
-{ time: 169, line: "Shh" },
-{ time: 182, line: "Últimamente solo quiero despreocuparme, sí" },
-{ time: 186, line: "Solo pateando margaritas" },
-{ time: 190, line: "Tengo demasiadas monedas en los bolsillos" },
-{ time: 193, line: "Las cuento, como tréboles de cuatro hojas en mi medallón" },
-{ time: 196, line: "Agujetas sueltas, sí" },
-{ time: 200, line: "Tropezando con mis fantasías" },
-{ time: 202, line: "Escuchando sucias nanas en repetición" },
-{ time: 206, line: "Bien podría pudrirme en la guardería y contar ovejas" }
+                { time: 20, line: "Niños gritando groserías desde sus cunas" },
+                { time: 26, line: "Veo el mundo con ojos cubiertos de tinta y cloro" },
+                { time: 32, line: "Tacho a quienes oyeron mis gritos y me vieron llorar" },
+                { time: 38, line: "Amo todo esto" },
+                { time: 41, line: "El fuego se expande por mi habitación" },
+                { time: 45, line: "Mi mundo es tan brillante" },
+                { time: 46, line: "Cuesta respirar, pero está bien" },
+                { time: 48, line: "Shh" },
+                { time: 61, line: "Shh" },
+                { time: 74, line: "Pego mis párpados para forzar la realidad (oh, no no)" },
+                { time: 80, line: "¿Por qué no me dejas atiborrarme de felicidad?" },
+                { time: 86, line: "Vivo en mi propio mundo de fantasía" },
+                { time: 92, line: "Niños gritando groserías desde sus cunas" },
+                { time: 98, line: "Hay días que me siento más flaco que nunca" },
+                { time: 104, line: "A veces no sé si este cuerpo me pertenece" },
+                { time: 110, line: "Amo todo esto" },
+                { time: 113, line: "El fuego se expande por mi habitación" },
+                { time: 117, line: "Mi mundo es tan brillante" },
+                { time: 118, line: "Cuesta respirar, pero está bien" },
+                { time: 120, line: "Shh" },
+                { time: 133, line: "Shh" },
+                { time: 146, line: "Quiero probar tu satisfacción" },
+                { time: 149, line: "Aguanta el aliento y siente la tensión" },
+                { time: 152, line: "Los demonios se esconden tras la redención" },
+                { time: 154, line: "La honestidad es un boleto solo de ida al infierno" },
+                { time: 158, line: "Quiero saborear el consumo" },
+                { time: 160, line: "Respira rápido y gasta el oxígeno" },
+                { time: 163, line: "Escucha a los niños cantar fuerte" },
+                { time: 166, line: "Es música hasta que la mecha se consuma" },
+                { time: 169, line: "Shh" },
+                { time: 182, line: "Últimamente solo quiero despreocuparme, sí" },
+                { time: 186, line: "Solo pateando margaritas" },
+                { time: 190, line: "Tengo demasiadas monedas en los bolsillos" },
+                { time: 193, line: "Las cuento, como tréboles de cuatro hojas en mi medallón" },
+                { time: 196, line: "Agujetas sueltas, sí" },
+                { time: 200, line: "Tropezando con mis fantasías" },
+                { time: 202, line: "Escuchando sucias nanas en repetición" },
+                { time: 206, line: "Bien podría pudrirme en la guardería y contar ovejas" }
                 // ... Sigue añadiendo líneas ...
             ]
         },
@@ -136,47 +135,47 @@ document.addEventListener('DOMContentLoaded', function() {
             src: "song2.mp3",
             lyrics: [
                 // 'time' es el segundo exacto en que quieres que aparezca la línea
-                { time: 6, line: "Todos mis amigos son desalmados, ten calma" }
-{ time: 11, line: "Espera a que pregunten de quién vienes" }
-{ time: 16, line: "Por favor, no hagas movimientos bruscos" }
-{ time: 21, line: "No sabes ni la mitad del horror" }
-{ time: 27, line: "Todos mis amigos son desalmados, ten calma" }
-{ time: 32, line: "Espera a que pregunten de quién vienes" }
-{ time: 37, line: "Por favor, no hagas movimientos bruscos" }
-{ time: 43, line: "No sabes ni la mitad del horror" }
-{ time: 49, line: "Bienvenido al cuarto de gente... que tiene cuartos llenos de gente" }
-{ time: 50, line: "Que un día amaron y ahora están guardados" }
-{ time: 55, line: "Solo porque dejamos las armas en la puerta" }
-{ time: 56, line: "No significa que la mente deje de ser explosiva" }
-{ time: 60, line: "Nunca sabrás si hay un psicópata sentado a tu lado" }
-{ time: 63, line: "Nunca sabrás si hay un asesino sentado a tu lado" }
-{ time: 66, line: "Pensarás: '¿Cómo llegué aquí, sentado a tu lado?'" }
-{ time: 69, line: "Pero después de todo, por favor no lo olvides" }
-{ time: 73, line: "Todos mis amigos son desalmados, ten calma" }
-{ time: 78, line: "Espera a que pregunten de quién vienes" }
-{ time: 84, line: "Por favor, no hagas movimientos bruscos" }
-{ time: 89, line: "No sabes ni la mitad del horror" }
-{ time: 95, line: "No tratamos muy bien a los extraños" }
-{ time: 97, line: "Dicen que los nuevos tienen un olor peculiar" }
-{ time: 100, line: "Desconfías, por no decir algo más" }
-{ time: 103, line: "Dicen que pueden oler tus intenciones" }
-{ time: 105, line: "Nunca sabrás si hay un fenómeno sentado a tu lado" }
-{ time: 108, line: "Tendrás gente muy rara sentada a tu lado" }
-{ time: 111, line: "Pensarás: '¿Cómo llegué aquí, sentado a tu lado?'" }
-{ time: 114, line: "Pero después de todo, por favor no lo olvides (cuidado)" }
-{ time: 123, line: "(Cuidado)" }
-{ time: 129, line: "Todos mis amigos son desalmados, ten calma" }
-{ time: 134, line: "Espera a que pregunten de quién vienes" }
-{ time: 139, line: "Por favor, no hagas movimientos bruscos" }
-{ time: 145, line: "No sabes ni la mitad del horror" }
-{ time: 150, line: "Todos mis amigos son desalmados, ten calma (cuidado)" }
-{ time: 156, line: "Espera a que pregunten de quién vienes (cuidado)" }
-{ time: 160, line: "Por favor, mis amigos son desalmados, ten calma (cuidado)" }
-{ time: 166, line: "Espera a que pregunten de quién vienes" }
-{ time: 171, line: "¿Por qué viniste? Sabías que debías quedarte" }
-{ time: 177, line: "Traté de advertirte que te alejaras" }
-{ time: 182, line: "Y ahora están afuera, listos para entrar" }
-{ time: 188, line: "Parece que podrías ser... uno de nosotros" }
+                { time: 6, line: "Todos mis amigos son desalmados, ten calma" },
+                { time: 11, line: "Espera a que pregunten de quién vienes" },
+                { time: 16, line: "Por favor, no hagas movimientos bruscos" },
+                { time: 21, line: "No sabes ni la mitad del horror" },
+                { time: 27, line: "Todos mis amigos son desalmados, ten calma" },
+                { time: 32, line: "Espera a que pregunten de quién vienes" },
+                { time: 37, line: "Por favor, no hagas movimientos bruscos" },
+                { time: 43, line: "No sabes ni la mitad del horror" },
+                { time: 49, line: "Bienvenido al cuarto de gente... que tiene cuartos llenos de gente" },
+                { time: 50, line: "Que un día amaron y ahora están guardados" },
+                { time: 55, line: "Solo porque dejamos las armas en la puerta" },
+                { time: 56, line: "No significa que la mente deje de ser explosiva" },
+                { time: 60, line: "Nunca sabrás si hay un psicópata sentado a tu lado" },
+                { time: 63, line: "Nunca sabrás si hay un asesino sentado a tu lado" },
+                { time: 66, line: "Pensarás: '¿Cómo llegué aquí, sentado a tu lado?'" },
+                { time: 69, line: "Pero después de todo, por favor no lo olvides" },
+                { time: 73, line: "Todos mis amigos son desalmados, ten calma" },
+                { time: 78, line: "Espera a que pregunten de quién vienes" },
+                { time: 84, line: "Por favor, no hagas movimientos bruscos" },
+                { time: 89, line: "No sabes ni la mitad del horror" },
+                { time: 95, line: "No tratamos muy bien a los extraños" },
+                { time: 97, line: "Dicen que los nuevos tienen un olor peculiar" },
+                { time: 100, line: "Desconfías, por no decir algo más" },
+                { time: 103, line: "Dicen que pueden oler tus intenciones" },
+                { time: 105, line: "Nunca sabrás si hay un fenómeno sentado a tu lado" },
+                { time: 108, line: "Tendrás gente muy rara sentada a tu lado" },
+                { time: 111, line: "Pensarás: '¿Cómo llegué aquí, sentado a tu lado?'" },
+                { time: 114, line: "Pero después de todo, por favor no lo olvides (cuidado)" },
+                { time: 123, line: "(Cuidado)" },
+                { time: 129, line: "Todos mis amigos son desalmados, ten calma" },
+                { time: 134, line: "Espera a que pregunten de quién vienes" },
+                { time: 139, line: "Por favor, no hagas movimientos bruscos" },
+                { time: 145, line: "No sabes ni la mitad del horror" },
+                { time: 150, line: "Todos mis amigos son desalmados, ten calma (cuidado)" },
+                { time: 156, line: "Espera a que pregunten de quién vienes (cuidado)" },
+                { time: 160, line: "Por favor, mis amigos son desalmados, ten calma (cuidado)" },
+                { time: 166, line: "Espera a que pregunten de quién vienes" },
+                { time: 171, line: "¿Por qué viniste? Sabías que debías quedarte" },
+                { time: 177, line: "Traté de advertirte que te alejaras" },
+                { time: 182, line: "Y ahora están afuera, listos para entrar" },
+                { time: 188, line: "Parece que podrías ser... uno de nosotros" }
                 // ... Sigue añadiendo líneas ...
             ]
         }
@@ -351,4 +350,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 2000);
         });
     });
-});
+
+    // <-- CAMBIO 2: AÑADE ESTA LÍNEA AL FINAL -->
+    // Esto oculta el preloader ahora que todo el script está listo.
+    preloader.classList.add('loaded');
+
+}); // <-- Este es el final del 'DOMContentLoaded'
