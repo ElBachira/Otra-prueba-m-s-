@@ -82,56 +82,40 @@ document.addEventListener('DOMContentLoaded', function() {
     // =================================================================
     const songs = [
         {
-            title: "Cradles",
-            artist: "Sub Urban",
+            title: "Golden Brown",
+            artist: "The Stranglers",
             src: "song.mp3",
             lyrics: [
                 // 'time' es el segundo exacto en que quieres que aparezca la línea
-                { time: 14, line: "Vivo en mi propio mundo de fantasía" },
-                { time: 20, line: "Niños gritando groserías desde sus cunas" },
-                { time: 26, line: "Veo el mundo con ojos cubiertos de tinta y cloro" },
-                { time: 32, line: "Tacho a quienes oyeron mis gritos y me vieron llorar" },
-                { time: 38, line: "Amo todo esto" },
-                { time: 41, line: "El fuego se expande por mi habitación" },
-                { time: 45, line: "Mi mundo es tan brillante" },
-                { time: 46, line: "Cuesta respirar, pero está bien" },
-                { time: 48, line: "Shh" },
-                { time: 61, line: "Shh" },
-                { time: 74, line: "Pego mis párpados para forzar la realidad (oh, no no)" },
-                { time: 80, line: "¿Por qué no me dejas atiborrarme de felicidad?" },
-                { time: 86, line: "Vivo en mi propio mundo de fantasía" },
-                { time: 92, line: "Niños gritando groserías desde sus cunas" },
-                { time: 98, line: "Hay días que me siento más flaco que nunca" },
-                { time: 104, line: "A veces no sé si este cuerpo me pertenece" },
-                { time: 110, line: "Amo todo esto" },
-                { time: 113, line: "El fuego se expande por mi habitación" },
-                { time: 117, line: "Mi mundo es tan brillante" },
-                { time: 118, line: "Cuesta respirar, pero está bien" },
-                { time: 120, line: "Shh" },
-                { time: 133, line: "Shh" },
-                { time: 146, line: "Quiero probar tu satisfacción" },
-                { time: 149, line: "Aguanta el aliento y siente la tensión" },
-                { time: 152, line: "Los demonios se esconden tras la redención" },
-                { time: 154, line: "La honestidad es un boleto solo de ida al infierno" },
-                { time: 158, line: "Quiero saborear el consumo" },
-                { time: 160, line: "Respira rápido y gasta el oxígeno" },
-                { time: 163, line: "Escucha a los niños cantar fuerte" },
-                { time: 166, line: "Es música hasta que la mecha se consuma" },
-                { time: 169, line: "Shh" },
-                { time: 182, line: "Últimamente solo quiero despreocuparme, sí" },
-                { time: 186, line: "Solo pateando margaritas" },
-                { time: 190, line: "Tengo demasiadas monedas en los bolsillos" },
-                { time: 193, line: "Las cuento, como tréboles de cuatro hojas en mi medallón" },
-                { time: 196, line: "Agujetas sueltas, sí" },
-                { time: 200, line: "Tropezando con mis fantasías" },
-                { time: 202, line: "Escuchando sucias nanas en repetición" },
-                { time: 206, line: "Bien podría pudrirme en la guardería y contar ovejas" }
+                  { time: 20, line: "Oro marrón, textura de sol" },
+{ time: 25, line: "Me tumba al suelo, mi mente escapó" },
+{ time: 28, line: "Toda la noche" },
+{ time: 30, line: "Sin pelear" },
+{ time: 32, line: "Nada va mal... con mi oro marrón" },
+{ time: 40, line: "Cada vez, igual que ayer" },
+{ time: 44, line: "En su barco, atado al mástil voy" },
+{ time: 47, line: "A tierras lejanas" },
+{ time: 50, line: "Me toma las manos" },
+{ time: 51, line: "Nada va mal... con mi oro marrón" },
+{ time: 76, line: "Oro marrón, fina tentación" },
+{ time: 80, line: "Por los siglos viaja hacia el oeste" },
+{ time: 84, line: "Viene de lejos" },
+{ time: 85, line: "Un día se queda" },
+{ time: 87, line: "Nada va mal... con mi oro marrón" },
+{ time: 171, line: "Nunca hay dolor... (nunca hay dolor)" },
+{ time: 174, line: "(Nunca hay dolor) con mi oro marrón (con mi oro marrón)" },
+{ time: 178, line: "(Con mi oro marrón) nunca hay dolor (nunca hay dolor)" },
+{ time: 182, line: "(Nunca hay dolor) con mi oro marrón (con mi oro marrón)" },
+{ time: 185, line: "(Con mi oro marrón) nunca hay dolor (nunca hay dolor)" },
+{ time: 190, line: "(Nunca hay dolor) con mi oro marrón (con mi oro marrón)" },
+{ time: 194, line: "(Con mi oro marrón) nunca hay dolor (nunca hay dolor)" },
+{ time: 198, line: "(Nunca hay dolor) con mi oro marrón..." }
                 // ... Sigue añadiendo líneas ...
             ]
         },
         {
-            title: "Heathens", // <-- CAMBIA ESTO
-            artist: "Twenty One Pilots", // <-- CAMBIA ESTO
+            title: "Army Dreamers", // <-- CAMBIA ESTO
+            artist: "Kate Bush", // <-- CAMBIA ESTO
             src: "song2.mp3",
             lyrics: [
                 // 'time' es el segundo exacto en que quieres que aparezca la línea
