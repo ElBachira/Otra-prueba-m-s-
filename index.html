@@ -93,5 +93,44 @@ Ocho años después, mientras se convertía en un ecosistema para gusanos y raí
 
     </div>
     <script src="script.js"></script>
+
+<!-- =================================================== -->
+    <!-- === SCRIPT PARA CARGAR BOTS DINÁMICAMENTE (NUEVO) === -->
+    <!-- =================================================== -->
+    <!-- 1. Importamos la lista PÚBLICA desde tu repositorio central -->
+    <script src="https://elbachira.github.io/bots.js?v=1.0"></script> 
+    
+    <!-- 2. El resto del script que genera los iconos -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Buscamos los contenedores que creamos en el HTML
+            const masculinosContainer = document.getElementById('bots-masculinos');
+            const femeninosContainer = document.getElementById('bots-femeninos');
+
+            // Nombre del bot actual (para que no se muestre a sí mismo en la lista)
+            const nombreDelBotActual = "Bom-seok"; // Cambia esto en cada ficha
+
+            // Recorremos la lista BOTS_LIST que está en el archivo bots.js
+            BOTS_LIST.forEach(bot => {
+                // Solo creamos el icono si el nombre del bot no es el de la página actual
+                if (bot.nombre !== nombreDelBotActual) {
+                    const botHtml = `
+                        <a href="${bot.url}" class="char-icon">
+                            <img src="${bot.imagen}" alt="${bot.nombre}">
+                            <span class="char-name">${bot.nombre}</span>
+                        </a>
+                    `;
+
+                    // Comprobamos su género y lo añadimos al contenedor correcto
+                    if (bot.genero === 'masculino') {
+                        masculinosContainer.innerHTML += botHtml;
+                    } else if (bot.genero === 'femenino') {
+                        femeninosContainer.innerHTML += botHtml;
+                    }
+                }
+            });
+        });
+    </script>
+    
 </body>
-</html>
+    </html>
